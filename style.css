@@ -8,4 +8,127 @@
 
 html {
   font-size: 16px;
+  background-color: rgb(23, 23, 23);
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(2.5rem, 1.786rem + 3.571vw, 5rem);
+}
+
+p,
+.correct button {
+  color: rgb(4, 255, 4);
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
+}
+
+p {
+  /* display: none; */
+}
+
+.text {
+  padding-bottom: 2rem;
+}
+
+.content-wrapper {
+  margin: auto;
+  text-align: center;
+}
+/* ------------------ */
+/* ---- Buttons ---- */
+/* ---------------- */
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid-item {
+  border: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  height: clamp(3.5rem, 2.786rem + 3.571vw, 6rem);
+  width: clamp(5rem, 3rem + 10vw, 12rem);
+  box-shadow: 2px 2px 4px 2px rgb(0, 0, 0);
+}
+
+button:nth-of-type(1),
+button:nth-of-type(3),
+button:nth-of-type(6),
+button:nth-of-type(8) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.grid-item i {
+  color: white;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
+  background-color: transparent;
+}
+
+/* ------------------------- */
+/* ---- Correct Button ---- */
+/* ----------------------- */
+
+.correct {
+  position: relative;
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+}
+
+.correct button {
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(4, 255, 4);
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+/* -------------------------- */
+/* ---- Arrow Rotations ---- */
+/* ------------------------ */
+
+button:nth-of-type(3) i,
+button:nth-of-type(6) i {
+  rotate: 45deg;
+}
+
+button:nth-of-type(1) i,
+button:nth-of-type(8) i {
+  rotate: -45deg;
+}
+
+/* ----------------------- */
+/* ---- Hover States ---- */
+/* --------------------- */
+
+@media (hover: hover) {
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.153);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  button:hover i {
+    color: rgb(213, 213, 213);
+  }
+
+  .correct button:hover {
+    background-color: rgba(4, 255, 4, 0.08);
+  }
+  button:nth-of-type(1):hover,
+  button:nth-of-type(3):hover,
+  button:nth-of-type(6):hover,
+  button:nth-of-type(8):hover {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
 }
