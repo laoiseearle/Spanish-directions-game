@@ -4,10 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="syle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Spanish Directions Game</title>
   </head>
   <body>
+    <main>
+      <div class="content-wrapper">
+        <div class="text">
+          <h1 id="direction">A la derecha</h1>
+          <p id="translation">to the right</p>
+        </div>
+
+        <div class="button-grid">
+          <button class="grid-item" type="button" id="northWest">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+          <button class="grid-item" type="button" id="north">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+          <button class="grid-item" type="button" id="northEast">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+          <button class="grid-item" type="button" id="west">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <div class="grid-item correct">
+            <button type="button" id="correct">Next</button>
+          </div>
+          <button class="grid-item" type="button" id="east">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button class="grid-item" type="button" id="southWest">
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+          <button class="grid-item" type="button" id="south">
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+          <button class="grid-item" type="button" id="southEast">
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/6faedfec4c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
