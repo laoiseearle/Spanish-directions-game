@@ -1,0 +1,67 @@
+[
+  {
+    "word": "Norte",
+    "direction": "north",
+    "translation": "North"
+  },
+  {
+    "word": "Derecho",
+    "direction": "north",
+    "translation": "Straight"
+  },
+  {
+    "word": "Adelante",
+    "direction": "north",
+    "translation": "Forward"
+  },
+  {
+    "word": "Noreste",
+    "direction": "northeast",
+    "translation": "North-east"
+  },
+  {
+    "word": "Este",
+    "direction": "east",
+    "translation": "east"
+  },
+  {
+    "word": "A la derecha",
+    "direction": "east",
+    "translation": "to the right"
+  },
+  {
+    "word": "Sureste",
+    "direction": "southeast",
+    "translation": "South-east"
+  },
+  {
+    "word": "Sur",
+    "direction": "south",
+    "translation": "South"
+  },
+  {
+    "word": "Atrás",
+    "direction": "south",
+    "translation": "Backwards/Behind"
+  },
+  {
+    "word": "Suroeste",
+    "direction": "southwest",
+    "translation": "South-west"
+  },
+  {
+    "word": "Oeste",
+    "direction": "west",
+    "translation": "West"
+  },
+  {
+    "word": "A la izquierda",
+    "direction": "west",
+    "translation": "to the left"
+  },
+  {
+    "word": "Noroeste",
+    "direction": "northwest",
+    "translation": "North-west"
+  }
+]
