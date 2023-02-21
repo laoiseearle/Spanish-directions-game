@@ -22,31 +22,65 @@
         </div>
 
         <div class="button-grid">
-          <button class="grid-item" type="button" id="northWest">
+          <button
+            class="grid-item"
+            type="button"
+            onclick="checkDirection('northwest')"
+          >
             <i class="fa-solid fa-arrow-up"></i>
           </button>
-          <button class="grid-item" type="button" id="north">
+          <button
+            class="grid-item"
+            type="button"
+            onclick="checkDirection('north')"
+          >
             <i class="fa-solid fa-arrow-up"></i>
           </button>
-          <button class="grid-item" type="button" id="northEast">
+          <button
+            class="grid-item"
+            type="button"
+            onclick="checkDirection('northeast')"
+          >
             <i class="fa-solid fa-arrow-up"></i>
           </button>
-          <button class="grid-item" type="button" id="west">
+          <button
+            class="grid-item"
+            type="button"
+            onclick="checkDirection('west')"
+          >
             <i class="fa-solid fa-arrow-left"></i>
           </button>
           <div class="grid-item correct">
-            <button type="button" id="correct">Next</button>
+            <button type="button" id="correct" onclick="generateWord()">
+              Next
+            </button>
           </div>
-          <button class="grid-item" type="button" id="east">
+          <button
+            class="grid-item"
+            type="button"
+            onclick="checkDirection('east')"
+          >
             <i class="fa-solid fa-arrow-right"></i>
           </button>
-          <button class="grid-item" type="button" id="southWest">
+          <button
+            class="grid-item"
+            type="button"
+            onclick="checkDirection('southwest')"
+          >
             <i class="fa-solid fa-arrow-down"></i>
           </button>
-          <button class="grid-item" type="button" id="south">
+          <button
+            class="grid-item"
+            type="button"
+            onclick="checkDirection('south')"
+          >
             <i class="fa-solid fa-arrow-down"></i>
           </button>
-          <button class="grid-item" type="button" id="southEast">
+          <button
+            class="grid-item"
+            type="button"
+            onclick="checkDirection('southeast')"
+          >
             <i class="fa-solid fa-arrow-down"></i>
           </button>
         </div>
@@ -56,6 +90,6 @@
       src="https://kit.fontawesome.com/6faedfec4c.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script type src="script.js"></script>
   </body>
 </html>
