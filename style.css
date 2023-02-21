@@ -29,10 +29,6 @@ p,
   font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
 }
 
-p {
-  /* display: none; */
-}
-
 .text {
   padding-bottom: 2rem;
 }
@@ -85,12 +81,18 @@ button:nth-of-type(8) {
 }
 
 .correct button {
-  /* display: none; */
+  opacity: 1;
   width: 100%;
   height: 100%;
   border: 2px solid rgb(4, 255, 4);
   border-radius: 0.5rem;
   background-color: transparent;
+}
+
+.hide {
+  opacity: 0;
+  display: hidden;
+  visibility: hidden;
 }
 
 /* -------------------------- */
